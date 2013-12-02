@@ -3,15 +3,56 @@ UITableView-DHSmartScreenshot
 
 ARC ready UITableView Category to get really easy, smart and instant screenshot images like no other library out there for iOS 5+ devices.
 
+
 Screenshots
 -----------
-This is a tableview on the simulator
-![iOS TableView on Simulator](https://www.dropbox.com/s/j08kibpapckm96z/Screen%20Shot.png)
+This is a tableview on the simulator:
 
-And here is the full screenshot image :)
-![Screenshot Taken - Example](https://www.dropbox.com/s/uuan6hnpzj1m7et/output%20image.jpg)
+![iOS TableView on Simulator](http://i.imgur.com/oIZJ5bT.png)
 
-Try it out to see how all the other methods work ;)
+And here is the full screenshot image that you get (selecting the first row, naturally):
+
+![Screenshot Taken - Example](http://i.imgur.com/w6UkZCD.png)
+
+
+Methods
+-------
+Indeed, as you can see on the simulator image, there are some methods to customize the way you want to take the screenshot.
+Each one of them is self descriptive so take a look:
+
+```objective-c
+- (UIImage *)screenshot;
+```
+
+```objective-c
+- (UIImage *)screenshotOfCellAtIndexPath:(NSIndexPath *)indexPath;
+```
+
+```objective-c
+- (UIImage *)screenshotOfHeaderViewAtSection:(NSUInteger)section;
+```
+
+```objective-c
+- (UIImage *)screenshotOfFooterViewAtSection:(NSUInteger)section;
+```
+
+```objective-c
+- (UIImage *)screenshotExcludingAllHeaders:(BOOL)withoutHeaders
+					   excludingAllFooters:(BOOL)withoutFooters
+						  excludingAllRows:(BOOL)withoutRows;
+```
+
+```objective-c
+- (UIImage *)screenshotExcludingHeadersAtSections:(NSSet *)headerSections
+					   excludingFootersAtSections:(NSSet *)footerSections
+						excludingRowsAtIndexPaths:(NSSet *)indexPaths;
+```
+
+```objective-c
+- (UIImage *)screenshotOfHeadersAtSections:(NSSet *)headerSections
+						 footersAtSections:(NSSet *)footerSections
+						  rowsAtIndexPaths:(NSSet *)indexPaths;
+```
 
 Contribution
 ------------
