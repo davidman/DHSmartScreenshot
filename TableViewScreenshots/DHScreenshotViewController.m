@@ -28,9 +28,21 @@
 	[self.scrollView setDelegate:self];
 }
 
+#pragma mark - ScrollView Delegate
+
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
 	return self.screenshotImageView;
+}
+
+#pragma mark - Share Button Action
+
+- (IBAction)shareButtonPressed:(id)sender
+{
+	UIActivityViewController *activityController = nil;
+	activityController = [[UIActivityViewController alloc] initWithActivityItems:@[self.screenshot]
+														   applicationActivities:nil];
+	[self presentViewController:activityController animated:YES completion:nil];
 }
 
 @end

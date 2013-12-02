@@ -238,7 +238,13 @@
                             <constraint firstItem="9p6-27-FDP" firstAttribute="top" secondItem="f3h-e7-HV7" secondAttribute="bottom" id="wjY-QF-FRb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Screenshot" id="3IF-0e-IUa"/>
+                    <navigationItem key="navigationItem" title="Screenshot" id="3IF-0e-IUa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="g42-HA-plh">
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="6kc-ox-GxR" id="RDl-gJ-KTK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="f3h-e7-HV7" id="Vku-cN-yVG"/>
                     </connections>

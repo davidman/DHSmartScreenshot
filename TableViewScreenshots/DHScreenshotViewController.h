@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface DHScreenshotViewController : UIViewController
+
 @property (strong, nonatomic) UIImage *screenshot;
+
+- (IBAction)shareButtonPressed:(id)sender;
+
 @end
