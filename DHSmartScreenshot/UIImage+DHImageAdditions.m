@@ -14,6 +14,7 @@
 {
 	UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
+	if (context == NULL) return nil;
 	
     [color set];
     CGContextFillRect(context, CGRectMake(0.f, 0.f, size.width, size.height));

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "DHSmartScreenshot"
 
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
 
   s.summary      = "UITableView Category to get really easy, smart and instant screenshot images like no other library out there for iOS 5+ devices."
 
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.source       = { :git => "https://github.com/davidman/DHSmartScreenshot.git", :tag => "v0.0.1" }
+  s.source       = { :git => "https://github.com/davidman/DHSmartScreenshot.git", :tag => 'v0.0.3' }
   
   s.source_files  = 'DHSmartScreenshot/*.{h,m}'
 end

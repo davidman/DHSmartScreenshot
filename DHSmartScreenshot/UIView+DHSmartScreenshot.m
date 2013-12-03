@@ -21,9 +21,11 @@
     // Create a graphics context and translate it the view we want to crop so
     // that even in grabbing (0,0), that origin point now represents the actual
     // cropping origin desired:
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
-    CGContextTranslateCTM(ctx, -croppingRect.origin.x, -croppingRect.origin.y);
-	[self.layer renderInContext:ctx];
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, -croppingRect.origin.x, -croppingRect.origin.y);
+	if (context == NULL) return nil;
+	
+	[self.layer renderInContext:context];
 	
 	UIImage *screenshotImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
