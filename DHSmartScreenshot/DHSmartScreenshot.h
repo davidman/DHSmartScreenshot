@@ -2,7 +2,7 @@
 //  DHSmartScreenshot.h
 //  TableViewScreenshots
 //
-//  Created by HERNANDEZ ALVAREZ, DAVID [AG-Contractor/7879] on 12/3/13.
+//  Created by Hernandez Alvarez, David on 12/3/13.
 //  Copyright (c) 2013 David Hernandez. All rights reserved.
 //
 
