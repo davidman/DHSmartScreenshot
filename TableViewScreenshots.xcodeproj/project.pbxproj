@@ -44,6 +44,7 @@
 		933F44C3184E354F00953804 /* UITableView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
 		933F44C4184E354F00953804 /* UIView+DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DHSmartScreenshot.h"; sourceTree = "<group>"; };
 		933F44C5184E354F00953804 /* UIView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
+		933F4508184E3ECE00953804 /* DHSmartScreenshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSmartScreenshot.h; sourceTree = "<group>"; };
 		93A1C04118481B5300BBB2A6 /* TableViewScreenshots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewScreenshots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A1C04418481B5300BBB2A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93A1C04618481B5300BBB2A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +101,7 @@
 				933F44C3184E354F00953804 /* UITableView+DHSmartScreenshot.m */,
 				933F44C4184E354F00953804 /* UIView+DHSmartScreenshot.h */,
 				933F44C5184E354F00953804 /* UIView+DHSmartScreenshot.m */,
+				933F4508184E3ECE00953804 /* DHSmartScreenshot.h */,
 			);
 			path = DHSmartScreenshot;
 			sourceTree = "<group>";
