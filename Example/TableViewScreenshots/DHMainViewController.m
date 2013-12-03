@@ -7,7 +7,7 @@
 //
 
 #import "DHMainViewController.h"
-#import "UITableView+DHSmartScreenshot.h"
+#import "DHSmartScreenshot.h"
 
 @interface DHMainViewController ()
 @property (strong, nonatomic) UIImage *screenshotTaken;
