@@ -23,7 +23,7 @@ Installation
 pod 'DHSmartScreenshot'
 ```
 
-and run `pod install`. It will install the most recent version of DHSmartScreenshot.
+to your Podfile and run `pod install`. It will install the most recent version of DHSmartScreenshot.
 
 
 How to use
