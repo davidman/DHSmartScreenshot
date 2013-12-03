@@ -1,7 +1,7 @@
-UITableView-DHSmartScreenshot
-=============================
+DHSmartScreenshot
+=================
 
-ARC ready UITableView Category to get really easy, smart and instant screenshot images like no other library out there for iOS 5+ devices.
+UITableView Category to get really easy, smart and instant screenshot images like no other library out there for iOS 5+ devices.
 
 
 Screenshots
@@ -15,10 +15,21 @@ And here is the full screenshot image that you get (selecting the first row, nat
 ![Screenshot Taken - Example](http://i.imgur.com/w6UkZCD.png)
 
 
-Methods
--------
-Indeed, as you can see on the simulator image, there are some methods to customize the way you want to take the screenshot.
-Each one of them is self descriptive so take a look:
+Installation
+------------
+1. The preferred way of installation is via [Cocoapods](http://cocoapods.org). Just add 
+
+```ruby
+pod 'DHSmartScreenshot'
+```
+
+and run `pod install`. It will install the most recent version of DHSmartScreenshot.
+
+
+How to use
+----------
+There are some methods to customize the way you want to take the screenshot.
+Each one of them is self descriptive and works as you could expect, take a look:
 
 ```objective-c
 - (UIImage *)screenshot;
@@ -54,10 +65,20 @@ Each one of them is self descriptive so take a look:
 						  rowsAtIndexPaths:(NSSet *)indexPaths;
 ```
 
+Example
+-------
+
+In order to get a full screenshot image out from a UITableView instance you just need 1 line
+
+```objective-c
+UIImage * tableViewScreenshot = [self.tableView screenshot];
+```
+
+
 Contribution
 ------------
 
-Send a pull-request or raise an issue. It is always good to know a better way of doing things, yay!
+Sure :) please send a pull-request or raise an issue. It is always good to know how to make things better, yay!
 
 
 Author
