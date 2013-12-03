@@ -22,8 +22,8 @@
     // that even in grabbing (0,0), that origin point now represents the actual
     // cropping origin desired:
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextTranslateCTM(context, -croppingRect.origin.x, -croppingRect.origin.y);
 	if (context == NULL) return nil;
+    CGContextTranslateCTM(context, -croppingRect.origin.x, -croppingRect.origin.y);
 	
 	[self.layer renderInContext:context];
 	
