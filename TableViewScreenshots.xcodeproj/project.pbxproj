@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93795D28184A715B0070448F /* UIView+DHSmartScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 93795D27184A715B0070448F /* UIView+DHSmartScreenshot.m */; };
+		933F44C6184E354F00953804 /* UIImage+DHImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 933F44C1184E354F00953804 /* UIImage+DHImageAdditions.m */; };
+		933F44C7184E354F00953804 /* UITableView+DHSmartScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 933F44C3184E354F00953804 /* UITableView+DHSmartScreenshot.m */; };
+		933F44C8184E354F00953804 /* UIView+DHSmartScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 933F44C5184E354F00953804 /* UIView+DHSmartScreenshot.m */; };
 		93A1C04518481B5300BBB2A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A1C04418481B5300BBB2A6 /* Foundation.framework */; };
 		93A1C04718481B5300BBB2A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A1C04618481B5300BBB2A6 /* CoreGraphics.framework */; };
 		93A1C04918481B5300BBB2A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A1C04818481B5300BBB2A6 /* UIKit.framework */; };
@@ -20,9 +22,7 @@
 		93A1C06018481B5300BBB2A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A1C04818481B5300BBB2A6 /* UIKit.framework */; };
 		93A1C06818481B5300BBB2A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93A1C06618481B5300BBB2A6 /* InfoPlist.strings */; };
 		93A1C06A18481B5300BBB2A6 /* TableViewScreenshotsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1C06918481B5300BBB2A6 /* TableViewScreenshotsTests.m */; };
-		93A1C07618481B9C00BBB2A6 /* UITableView+DHSmartScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1C07518481B9C00BBB2A6 /* UITableView+DHSmartScreenshot.m */; };
 		93A1C07818481DA500BBB2A6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A1C07718481DA500BBB2A6 /* Storyboard.storyboard */; };
-		93A1C07B1848248500BBB2A6 /* UIImage+DHImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1C07A1848248500BBB2A6 /* UIImage+DHImageAdditions.m */; };
 		93A1C07E1848251D00BBB2A6 /* DHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1C07D1848251D00BBB2A6 /* DHMainViewController.m */; };
 		93A1C0811848267500BBB2A6 /* DHScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1C0801848267500BBB2A6 /* DHScreenshotViewController.m */; };
 /* End PBXBuildFile section */
@@ -38,8 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		93795D26184A715B0070448F /* UIView+DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DHSmartScreenshot.h"; sourceTree = "<group>"; };
-		93795D27184A715B0070448F /* UIView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
+		933F44C0184E354F00953804 /* UIImage+DHImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DHImageAdditions.h"; sourceTree = "<group>"; };
+		933F44C1184E354F00953804 /* UIImage+DHImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DHImageAdditions.m"; sourceTree = "<group>"; };
+		933F44C2184E354F00953804 /* UITableView+DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DHSmartScreenshot.h"; sourceTree = "<group>"; };
+		933F44C3184E354F00953804 /* UITableView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
+		933F44C4184E354F00953804 /* UIView+DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DHSmartScreenshot.h"; sourceTree = "<group>"; };
+		933F44C5184E354F00953804 /* UIView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
 		93A1C04118481B5300BBB2A6 /* TableViewScreenshots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewScreenshots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A1C04418481B5300BBB2A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93A1C04618481B5300BBB2A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,11 +60,7 @@
 		93A1C06518481B5300BBB2A6 /* TableViewScreenshotsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewScreenshotsTests-Info.plist"; sourceTree = "<group>"; };
 		93A1C06718481B5300BBB2A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93A1C06918481B5300BBB2A6 /* TableViewScreenshotsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewScreenshotsTests.m; sourceTree = "<group>"; };
-		93A1C07418481B9C00BBB2A6 /* UITableView+DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DHSmartScreenshot.h"; sourceTree = "<group>"; };
-		93A1C07518481B9C00BBB2A6 /* UITableView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
 		93A1C07718481DA500BBB2A6 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		93A1C0791848248500BBB2A6 /* UIImage+DHImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DHImageAdditions.h"; sourceTree = "<group>"; };
-		93A1C07A1848248500BBB2A6 /* UIImage+DHImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DHImageAdditions.m"; sourceTree = "<group>"; };
 		93A1C07C1848251D00BBB2A6 /* DHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHMainViewController.h; sourceTree = "<group>"; };
 		93A1C07D1848251D00BBB2A6 /* DHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHMainViewController.m; sourceTree = "<group>"; };
 		93A1C07F1848267500BBB2A6 /* DHScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHScreenshotViewController.h; sourceTree = "<group>"; };
@@ -91,6 +91,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		933F44BF184E354F00953804 /* DHSmartScreenshot */ = {
+			isa = PBXGroup;
+			children = (
+				933F44C0184E354F00953804 /* UIImage+DHImageAdditions.h */,
+				933F44C1184E354F00953804 /* UIImage+DHImageAdditions.m */,
+				933F44C2184E354F00953804 /* UITableView+DHSmartScreenshot.h */,
+				933F44C3184E354F00953804 /* UITableView+DHSmartScreenshot.m */,
+				933F44C4184E354F00953804 /* UIView+DHSmartScreenshot.h */,
+				933F44C5184E354F00953804 /* UIView+DHSmartScreenshot.m */,
+			);
+			path = DHSmartScreenshot;
+			sourceTree = "<group>";
+		};
 		93A1C03818481B5300BBB2A6 = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +144,7 @@
 				93A1C07D1848251D00BBB2A6 /* DHMainViewController.m */,
 				93A1C07F1848267500BBB2A6 /* DHScreenshotViewController.h */,
 				93A1C0801848267500BBB2A6 /* DHScreenshotViewController.m */,
-				93A1C07318481B5D00BBB2A6 /* UITableView+DHSmartScreenshot */,
+				933F44BF184E354F00953804 /* DHSmartScreenshot */,
 				93A1C05618481B5300BBB2A6 /* Images.xcassets */,
 				93A1C04B18481B5300BBB2A6 /* Supporting Files */,
 			);
@@ -165,19 +178,6 @@
 				93A1C06618481B5300BBB2A6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		93A1C07318481B5D00BBB2A6 /* UITableView+DHSmartScreenshot */ = {
-			isa = PBXGroup;
-			children = (
-				93A1C07418481B9C00BBB2A6 /* UITableView+DHSmartScreenshot.h */,
-				93A1C07518481B9C00BBB2A6 /* UITableView+DHSmartScreenshot.m */,
-				93A1C0791848248500BBB2A6 /* UIImage+DHImageAdditions.h */,
-				93A1C07A1848248500BBB2A6 /* UIImage+DHImageAdditions.m */,
-				93795D26184A715B0070448F /* UIView+DHSmartScreenshot.h */,
-				93795D27184A715B0070448F /* UIView+DHSmartScreenshot.m */,
-			);
-			name = "UITableView+DHSmartScreenshot";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,10 +280,10 @@
 				93A1C0811848267500BBB2A6 /* DHScreenshotViewController.m in Sources */,
 				93A1C05518481B5300BBB2A6 /* DHAppDelegate.m in Sources */,
 				93A1C05118481B5300BBB2A6 /* main.m in Sources */,
-				93A1C07618481B9C00BBB2A6 /* UITableView+DHSmartScreenshot.m in Sources */,
+				933F44C6184E354F00953804 /* UIImage+DHImageAdditions.m in Sources */,
 				93A1C07E1848251D00BBB2A6 /* DHMainViewController.m in Sources */,
-				93795D28184A715B0070448F /* UIView+DHSmartScreenshot.m in Sources */,
-				93A1C07B1848248500BBB2A6 /* UIImage+DHImageAdditions.m in Sources */,
+				933F44C8184E354F00953804 /* UIView+DHSmartScreenshot.m in Sources */,
+				933F44C7184E354F00953804 /* UITableView+DHSmartScreenshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
