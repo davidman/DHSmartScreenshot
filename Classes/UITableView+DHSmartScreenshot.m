@@ -43,7 +43,7 @@
 - (UIImage *)screenshotOfHeaderView
 {
 	CGPoint originalOffset = [self contentOffset];
-	CGRect headerRect = [self tableHeaderView].bounds;
+	CGRect headerRect = [self tableHeaderView].frame;
 	
 	[self scrollRectToVisible:headerRect animated:NO];
 	UIImage *headerScreenshot = [self screenshotForCroppingRect:headerRect];
@@ -55,7 +55,7 @@
 - (UIImage *)screenshotOfFooterView
 {
 	CGPoint originalOffset = [self contentOffset];
-	CGRect footerRect = [self tableFooterView].bounds;
+	CGRect footerRect = [self tableFooterView].frame;
 	
 	[self scrollRectToVisible:footerRect animated:NO];
 	UIImage *footerScreenshot = [self screenshotForCroppingRect:footerRect];
