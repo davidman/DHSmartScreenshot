@@ -40,6 +40,30 @@
 	return cellScreenshot;
 }
 
+- (UIImage *)screenshotOfHeaderView
+{
+	CGPoint originalOffset = [self contentOffset];
+	CGRect headerRect = [self tableHeaderView].frame;
+	
+	[self scrollRectToVisible:headerRect animated:NO];
+	UIImage *headerScreenshot = [self screenshotForCroppingRect:headerRect];
+	[self setContentOffset:originalOffset animated:NO];
+	
+	return headerScreenshot;
+}
+
+- (UIImage *)screenshotOfFooterView
+{
+	CGPoint originalOffset = [self contentOffset];
+	CGRect footerRect = [self tableFooterView].frame;
+	
+	[self scrollRectToVisible:footerRect animated:NO];
+	UIImage *footerScreenshot = [self screenshotForCroppingRect:footerRect];
+	[self setContentOffset:originalOffset animated:NO];
+	
+	return footerScreenshot;
+}
+
 - (UIImage *)screenshotOfHeaderViewAtSection:(NSUInteger)section
 {
 	CGPoint originalOffset = [self contentOffset];
@@ -84,7 +108,9 @@
 						excludingRowsAtIndexPaths:(NSSet *)excludedIndexPaths
 {
 	NSMutableArray *screenshots = [NSMutableArray array];
-	
+	// Header Screenshot
+	UIImage *headerScreenshot = [self screenshotOfHeaderView];
+	if (headerScreenshot) [screenshots addObject:headerScreenshot];
 	for (int section=0; section<self.numberOfSections; section++) {
 		// Header Screenshot
 		UIImage *headerScreenshot = [self screenshotOfHeaderViewAtSection:section excludedHeaderSections:excludedHeaderSections];
@@ -101,6 +127,8 @@
 		UIImage *footerScreenshot = [self screenshotOfFooterViewAtSection:section excludedFooterSections:excludedFooterSections];
 		if (footerScreenshot) [screenshots addObject:footerScreenshot];
 	}
+	UIImage *footerScreenshot = [self screenshotOfFooterView];
+	if (footerScreenshot) [screenshots addObject:footerScreenshot];
 	return [UIImage verticalImageFromArray:screenshots];
 }
 
