@@ -82,6 +82,9 @@ Each one of them is self descriptive and works as you could expect, take a look:
 						  rowsAtIndexPaths:(NSSet *)indexPaths;
 ```
 
+```objective-c
+- (UIImage *)screenshotOfVisibleContent;
+```
 
 Contribution
 ------------

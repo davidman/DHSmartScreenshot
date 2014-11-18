@@ -25,6 +25,7 @@
 		93A1C07818481DA500BBB2A6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A1C07718481DA500BBB2A6 /* Storyboard.storyboard */; };
 		93A1C07E1848251D00BBB2A6 /* DHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1C07D1848251D00BBB2A6 /* DHMainViewController.m */; };
 		93A1C0811848267500BBB2A6 /* DHScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1C0801848267500BBB2A6 /* DHScreenshotViewController.m */; };
+		D32BAE271A1B37D800B92E8D /* UIScrollView+DHSmartScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D32BAE261A1B37D800B92E8D /* UIScrollView+DHSmartScreenshot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		93A1C07D1848251D00BBB2A6 /* DHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHMainViewController.m; sourceTree = "<group>"; };
 		93A1C07F1848267500BBB2A6 /* DHScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHScreenshotViewController.h; sourceTree = "<group>"; };
 		93A1C0801848267500BBB2A6 /* DHScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHScreenshotViewController.m; sourceTree = "<group>"; };
+		D32BAE231A1B377C00B92E8D /* UIScrollView+DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+DHSmartScreenshot.h"; path = "../Classes/UIScrollView+DHSmartScreenshot.h"; sourceTree = "<group>"; };
+		D32BAE261A1B37D800B92E8D /* UIScrollView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+DHSmartScreenshot.m"; path = "../Classes/UIScrollView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				933F456D184E5D1400953804 /* UIImage+DHImageAdditions.m */,
 				933F456E184E5D1400953804 /* UITableView+DHSmartScreenshot.h */,
 				933F456F184E5D1400953804 /* UITableView+DHSmartScreenshot.m */,
+				D32BAE231A1B377C00B92E8D /* UIScrollView+DHSmartScreenshot.h */,
+				D32BAE261A1B37D800B92E8D /* UIScrollView+DHSmartScreenshot.m */,
 				933F4570184E5D1400953804 /* UIView+DHSmartScreenshot.h */,
 				933F4571184E5D1400953804 /* UIView+DHSmartScreenshot.m */,
 			);
@@ -279,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32BAE271A1B37D800B92E8D /* UIScrollView+DHSmartScreenshot.m in Sources */,
 				93A1C0811848267500BBB2A6 /* DHScreenshotViewController.m in Sources */,
 				93A1C05518481B5300BBB2A6 /* DHAppDelegate.m in Sources */,
 				93A1C05118481B5300BBB2A6 /* main.m in Sources */,

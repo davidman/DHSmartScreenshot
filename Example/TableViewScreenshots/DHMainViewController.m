@@ -68,6 +68,10 @@
 	self.screenshotTaken = [self.tableView screenshotOfCellAtIndexPath:indexPath];
 }
 
+-(void)takeScreenshotOfVisibleContent{
+    self.screenshotTaken = [self.tableView screenshotOfVisibleContent];
+}
+
 - (void)takeScreenshotWithoutFirstHeader
 {
 	NSArray *excludedHeadersSections = @[@(0)];
@@ -130,7 +134,9 @@
 			[self takeScreenshotForRowsOnly];
 		} else if (indexPath.row == 4) {
 			[self takeScreenshotForRowAtIndexPath:indexPath];
-		}
+        } else if (indexPath.row == 5) {
+            [self takeScreenshotOfVisibleContent];
+        }
 	} else if (indexPath.section == 1) {
 		if (indexPath.row == 0) {
 			[self takeScreenshotWithoutFirstHeader];
