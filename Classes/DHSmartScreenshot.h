@@ -10,5 +10,6 @@
 #define TableViewScreenshots_DHSmartScreenshot_h
 
 #import "UITableView+DHSmartScreenshot.h"
+#import "UIScrollView+DHSmartScreenshot.h"
 
 #endif
