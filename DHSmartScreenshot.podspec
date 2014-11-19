@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "DHSmartScreenshot"
   s.version      = "1.2.0"
-  s.summary      = "UITableView Category to get really easy, smart and instant screenshot images like no other library out there for iOS 5+ devices."
+  s.summary      = "UITableView/UIScrollView Category to get really easy, smart and instant screenshot images like no other library out there for iOS 5+ devices."
 
   s.homepage     = 'https://github.com/davidman/DHSmartScreenshot'
   s.license      = { :type => 'MIT'}
