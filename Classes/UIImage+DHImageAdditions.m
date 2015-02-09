@@ -34,7 +34,7 @@
 	CGSize totalImageSize = [self verticalAppendedTotalImageSizeFromImagesArray:imagesArray];
 	UIGraphicsBeginImageContextWithOptions(totalImageSize, NO, 0.f);
 	// For each image found in the array, create a new big image vertically
-	int imageOffsetFactor = 0;
+	CGFloat imageOffsetFactor = 0.0f;
 	for (UIImage *img in imagesArray) {
 		[img drawAtPoint:CGPointMake(0, imageOffsetFactor)];
 		imageOffsetFactor += img.size.height;
