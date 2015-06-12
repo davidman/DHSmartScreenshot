@@ -14,4 +14,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source_files  = 'Classes/*.{h,m}'
   s.requires_arc  = true
+  
+  s.subspec 'Swift' do |swspec|
+    swspec.source_files = "Classes/Swift"
+  end
 end
