@@ -4,16 +4,16 @@ import UIKit
 extension UIView {
     func screenshotForCroppingRect(croppingRect:CGRect) -> UIImage? {
         
-        UIGraphicsBeginImageContextWithOptions(croppingRect.size, false, UIScreen.mainScreen().scale);
-
-        var context = UIGraphicsGetCurrentContext()
+        UIGraphicsBeginImageContextWithOptions(croppingRect.size, false, UIScreen.main.scale);
+        
+        let context = UIGraphicsGetCurrentContext()
         if context == nil {
             return nil;
         }
         
-        CGContextTranslateCTM(context, -croppingRect.origin.x, -croppingRect.origin.y)
+        context!.translateBy(x: -croppingRect.origin.x, y: -croppingRect.origin.y)
         self.layoutIfNeeded()
-        self.layer.renderInContext(context)
+        self.layer.render(in: context!)
         
         let screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -21,6 +21,6 @@ extension UIView {
     }
     
     var screenshot : UIImage? {
-        return self.screenshotForCroppingRect(self.bounds)
+        return self.screenshotForCroppingRect(croppingRect: self.bounds)
     }
 }
