@@ -19,7 +19,7 @@ And here is the full screenshot image that you get by selecting the first row (f
 Installation
 ------------
 
-1. The preferred way of installation is via [Cocoapods](http://cocoapods.org). Just add 
+1. The preferred way of installation is via [CocoaPods](http://cocoapods.org). Just add 
 
 ```ruby
 pod 'DHSmartScreenshot'
